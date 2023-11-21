@@ -7,6 +7,7 @@ function App() {
     <>
     
       <Navbar title="TextEditoR" abouttext="About-us"/>
+      
       <div className='container my-3'>
       <TextFormComponent heading="Enter text to edit"/>
       </div>
