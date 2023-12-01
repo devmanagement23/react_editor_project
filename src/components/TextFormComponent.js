@@ -32,6 +32,10 @@ export default function TextFormComponent(props) {
     setText(event.target.value);
   }
 
+  const handleClearClick =()=>{
+    setText("")
+  }
+
   const [text,setText] = useState('')
  // const [text,setText] = useState('Enter text here')   // = returning array
   //text is variable             //"enter text here" is value of variable 'text'
@@ -52,6 +56,7 @@ export default function TextFormComponent(props) {
             <button className="btn btn-primary " onClick={handleUppClick}>Convert to Uppercase</button>
             
             <button className='btn btn-primary mx-5' onClick={handleLowerClick}>Convert to Lowercase</button>
+            <button className='btn btn-primary mx-2' onClick={handleClearClick}>Clear</button>
             
           </div> 
           <div className="container my-3">
